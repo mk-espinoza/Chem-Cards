@@ -77,3 +77,6 @@ crashlytics-build.properties
 # Model Files
 *.blend
 *.blend1
+
+## Crash Logs
+*mono_crash.*
