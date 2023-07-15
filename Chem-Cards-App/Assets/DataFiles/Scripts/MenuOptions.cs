@@ -5,31 +5,31 @@ using UnityEngine;
 public class MenuOptions : MonoBehaviour
 {
 
-    private Animator _animatior;
+    private Animator _animator;
 
     public void Start()
     {
-        _animatior = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
     }
 
     public void MoveFromHomeToCreditScreen()
     {
-        _animatior.SetTrigger("HomeToCreditsTrigger");
+        _animator.SetTrigger("HomeToCreditsTrigger");
     }
 
     public void MoveFromCreditsToHomeScreen()
     {
-
+        _animator.SetTrigger("CreditsToHomeTrigger");
     }
 
     public void MoveFromHomeToModeSelectScreen()
     {
-
+        _animator.SetTrigger("HomeToModeSelectTrigger");
     }
 
     public void MoveFromModeSelectToHomeScreen()
     {
-
+        _animator.SetTrigger("ModeSelectToHomeTrigger");
     }
 
     public void LoadGame()
