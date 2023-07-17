@@ -13,6 +13,11 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel("ARScene"));
     }
 
+    public void ReturnHome()
+    {
+        StartCoroutine(LoadLevel("MenuScene"));
+    }
+
     IEnumerator LoadLevel(string sceneName)
     {
         // Play animation

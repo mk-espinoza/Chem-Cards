@@ -335,7 +335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7069600165393688101, guid: d990708e46fe34b0eacc1c615a4fc5e5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7069600165393688101, guid: d990708e46fe34b0eacc1c615a4fc5e5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -451,7 +451,7 @@ RectTransform:
   - {fileID: 1389672409}
   - {fileID: 308682735}
   m_Father: {fileID: 1252547636}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -489,7 +489,7 @@ RectTransform:
   - {fileID: 2138352108}
   - {fileID: 1068105217}
   m_Father: {fileID: 1252547636}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -709,7 +709,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 308682737}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1554364427}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: ReturnHome
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &308682737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1406,9 +1418,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 486621190}
-  - {fileID: 39906294}
   - {fileID: 53285199}
   - {fileID: 180922499}
+  - {fileID: 39906294}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1539,6 +1551,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389672408}
   m_CullTransparentMesh: 1
+--- !u!114 &1554364427 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7069600165393688100, guid: d990708e46fe34b0eacc1c615a4fc5e5, type: 3}
+  m_PrefabInstance: {fileID: 39906293}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622886d189df6413bb9f2bcca26511ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1636428539
 GameObject:
   m_ObjectHideFlags: 0
