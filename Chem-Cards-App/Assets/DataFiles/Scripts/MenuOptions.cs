@@ -37,6 +37,11 @@ public class MenuOptions : MonoBehaviour
         _animator.SetTrigger("ModeSelectToStepsTrigger");
     }
 
+    public void MoveFromModeSelectToStepsScreen2()
+    {
+        _animator.SetTrigger("ModeSelectToStepsTrigger");
+    }
+
 
     public void LoadGame()
     {
