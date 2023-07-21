@@ -14,7 +14,9 @@ public class MoleculeController : MonoBehaviour
         foreach (Texture2D texture2D in ImageMarkers)
         {
             if (string.Equals(targetName, texture2D.name))
+            {
                 return true;
+            }
 
         }
 

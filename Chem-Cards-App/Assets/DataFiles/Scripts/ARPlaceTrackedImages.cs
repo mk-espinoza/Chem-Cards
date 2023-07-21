@@ -50,6 +50,7 @@ public class ARPlaceTrackedImages : MonoBehaviour
     {
         foreach (var newImage in eventArgs.added)
         {
+
             string addedImageName = newImage.referenceImage.name;
             foreach (GameObject prefab in TrackedImagePrefabs)
             {
@@ -62,18 +63,18 @@ public class ARPlaceTrackedImages : MonoBehaviour
             }
         }
 
-        //foreach (var updatedImage in eventArgs.updated)
-        //{
-        //    bool isTrackingState = updatedImage.trackingState == TrackingState.Tracking;
-        //    GameObject gameObject = _markerNamesToInstPrefab[updatedImage.referenceImage.name];
-        //    gameObject.SetActive(isTrackingState);
-        //}
+        foreach (var updatedImage in eventArgs.updated)
+        {
+            bool isTrackingState = updatedImage.trackingState == TrackingState.Tracking;
+            GameObject gameObject = _markerNamesToInstPrefab[updatedImage.referenceImage.name];
+            gameObject.SetActive(isTrackingState);
+        }
 
-        //foreach (var deletedImage in eventArgs.removed)
-        //{
-        //    Destroy(_markerNamesToInstPrefab[deletedImage.referenceImage.name]);
-        //    _markerNamesToInstPrefab.Remove(deletedImage.referenceImage.name);
-        //}
+        foreach (var deletedImage in eventArgs.removed)
+        {
+            Destroy(_markerNamesToInstPrefab[deletedImage.referenceImage.name]);
+            _markerNamesToInstPrefab.Remove(deletedImage.referenceImage.name);
+        }
     }
 
     
